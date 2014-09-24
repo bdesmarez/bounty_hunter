@@ -33,4 +33,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'better_errors'
+  gem 'shoulda-matchers',   '~> 2.6.2', require: false
+  gem 'faker',              '~> 1.4.3'
 end
