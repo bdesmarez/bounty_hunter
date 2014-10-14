@@ -1,0 +1,4 @@
+en:
+  flash_create: 'Hunt was successfully created.'
+  flash_create_error: 'An error occurred, please try again.'
+  flash_update: 'Hunt was successfully updated.'
