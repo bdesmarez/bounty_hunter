@@ -1,0 +1,9 @@
+= search_form_for @q, html: { class: "form-vertical" } do |f|
+
+  .input-group
+    = f.input :victim_name_cont, label: false
+    %span.input-group-btn
+      = f.button :submit, class: 'btn'
+
+
+%br

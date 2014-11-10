@@ -1,19 +1,22 @@
 - model_class = Hunt
 .page-header
   %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+
+= render 'search_form'
+
 %table.table.table-striped
   %thead
     %tr
-      %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:victim_name)
+      %th= model_class.human_attribute_name(:victim_guild)
       %th= model_class.human_attribute_name(:reason)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - @hunts.each do |hunt|
       %tr
-        %td= link_to hunt.id, hunt_path(hunt)
         %td= hunt.victim.name if hunt.victim
+        %td= hunt.victim.guild if hunt.victim
         %td= hunt.reason if hunt.reason
         %td=l hunt.created_at
         %td

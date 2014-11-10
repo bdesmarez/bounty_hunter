@@ -1,7 +1,8 @@
 class HuntsController < ApplicationController
 
   def index
-    @hunts = Hunt.all
+    @q = Hunt.search(params[:q])
+    @hunts = @q.result
   end
 
   def show

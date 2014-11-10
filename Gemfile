@@ -16,7 +16,11 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 # gem 'coffee-rails', '~> 4.0.0'
 
+# Formulaires
 gem 'simple_form', '~> 3.1.0.rc2'
+
+# Search & Paginate
+gem 'ransack'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
