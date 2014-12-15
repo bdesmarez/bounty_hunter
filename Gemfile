@@ -38,8 +38,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'rb-fsevent'          if `uname` =~ /Darwin/
   gem 'better_errors'
   gem 'shoulda-matchers',   '~> 2.6.2', require: false
   gem 'faker',              '~> 1.4.3'
+  gem 'rubocop',            require: false
 end
